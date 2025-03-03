@@ -1,0 +1,53 @@
+:root {
+    --primary-color: #007aff; 
+    --secondary-color: #232f3e;
+    --background-color: #f5f7fa;
+    --text-color: #333;
+    --price-color: #007185;
+    --button-hover: #005bb5;
+    --success-color: #16a34a;
+    --border-radius: 8px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: var(--button-hover);
+}
+
+.btn-dark {
+    background: var(--secondary-color);
+    color: #fff;
+}
+
+.btn-dark:hover {
+    background: black;
+}
