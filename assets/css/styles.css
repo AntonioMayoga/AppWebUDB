@@ -1,31 +1,53 @@
-.product-card {
-    transition: transform 0.3s ease;
+:root {
+    --primary-color: #007aff; 
+    --secondary-color: #232f3e;
+    --background-color: #f5f7fa;
+    --text-color: #333;
+    --price-color: #007185;
+    --button-hover: #005bb5;
+    --success-color: #16a34a;
+    --border-radius: 8px;
 }
-.product-card:hover {
-    transform: scale(1.05);
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
 }
-.cart {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background: white;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
 }
-.cart-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
-}
-.cart-item button {
-    background: #ff4d4d;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    font-weight: bold;
     cursor: pointer;
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: var(--button-hover);
+}
+
+.btn-dark {
+    background: var(--secondary-color);
+    color: #fff;
+}
+
+.btn-dark:hover {
+    background: black;
 }
