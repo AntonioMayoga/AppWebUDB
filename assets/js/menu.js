@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   const banner = document.querySelector("#banner");
-  const rutaBase = window.location.origin + "/assets/img/banner/";
+  const rutaBase = window.location.origin + "AppWebUDB/assets/img/banner/";
   const imagenes = [
     rutaBase + "banner-1.jpg",
     rutaBase + "banner-2.webp",
